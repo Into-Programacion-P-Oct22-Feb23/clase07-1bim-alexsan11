@@ -29,12 +29,15 @@ public class Ejemplo06 {
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
         // true 
-        while (bandera) {
+       //  while (bandera) {
+           while (bandera==true){
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
 
             if (calificacion > 20) {
                 calificacion = 20;
+                // bandera le esta poniendo una condicion en donde si es verdadera va salir de ciclo esto
+                // para poder salir de ciclo
             }
             suma_total = suma_total + calificacion;
 
@@ -48,6 +51,7 @@ public class Ejemplo06 {
         }
 
         System.out.printf("Suma de calificaciones es %.2f\n", suma_total);
+        
 
     }
 }
